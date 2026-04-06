@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cro365xjx7jly"]
+
+[ext_resource type="Script" uid="uid://205h15lvrh54" path="res://Walking.gd" id="1_hmnvj"]
+[ext_resource type="Texture2D" uid="uid://bx4tipjf0xc88" path="res://sprite/pixel-art-frame-1.png" id="2_504in"]
+[ext_resource type="Script" uid="uid://be7mtfvse4y5a" path="res://follow_cam.gd" id="3_504in"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mdnh3"]
+size = Vector2(58, 54)
+
+[node name="area_a-01" type="Node2D" unique_id=1948982279]
+
+[node name="player" type="CharacterBody2D" parent="." unique_id=1797402138]
+script = ExtResource("1_hmnvj")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="player" unique_id=1121691426]
+scale = Vector2(0.192188, 0.192188)
+texture = ExtResource("2_504in")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=38992798]
+shape = SubResource("RectangleShape2D_mdnh3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1461565343]
+script = ExtResource("3_504in")

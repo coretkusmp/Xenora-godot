@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ddop1cap5b2w1"]
+
+[node name="Main Menu" type="Node2D" unique_id=8890963]
+position = Vector2(235, 207)
+
+[node name="Play button" type="Button" parent="." unique_id=1402704427]
+offset_left = -182.0
+offset_top = -132.0
+offset_right = 62.0
+offset_bottom = -64.0
+text = "Play"
+
+[node name="Character button" type="Button" parent="." unique_id=122004854]
+offset_left = -182.0
+offset_top = -12.0
+offset_right = 62.0
+offset_bottom = 56.0
+text = "Character"
+
+[node name="Settings button" type="Button" parent="." unique_id=668260911]
+offset_left = -182.0
+offset_top = 108.0
+offset_right = 62.0
+offset_bottom = 176.0
+text = "Settings
+"
+
+[node name="About button" type="Button" parent="." unique_id=1237052737]
+offset_left = -182.0
+offset_top = 228.0
+offset_right = 62.0
+offset_bottom = 296.0
+text = "About
+"
+
+[node name="Label" type="Label" parent="." unique_id=661907338]
+offset_left = 417.0
+offset_top = 6.0
+offset_right = 763.0
+offset_bottom = 143.0
+theme_override_font_sizes/font_size = 100
+text = "Xenora"
