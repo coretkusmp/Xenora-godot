@@ -22,10 +22,3 @@ shape = SubResource("RectangleShape2D_mdnh3")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1461565343]
 script = ExtResource("3_504in")
-
-[node name="Button" type="Button" parent="." unique_id=447722259]
-offset_left = 176.0
-offset_top = 96.0
-offset_right = 329.0
-offset_bottom = 127.0
-text = "Anggap aja tombol"
