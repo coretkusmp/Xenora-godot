@@ -9,5 +9,7 @@ func _physics_process(delta):
 	velocity = direction * speed
 	move_and_slide()
 
-	look_at(get_global_mouse_position())
-	rotation += deg_to_rad(180)
+	if direction != Vector2.ZERO:
+		var target_rotation = direction.angle() + deg_to_rad(180)
+		rotation = lerp_angle(rotation, target_rotation, 10 * delta)
+
