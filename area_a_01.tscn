@@ -69,6 +69,7 @@ text = "stone
 wall"
 
 [node name="menu_exit_bg" type="Sprite2D" parent="." unique_id=1618458419]
+visible = false
 modulate = Color(0.17785347, 0.17785347, 0.17785347, 1)
 material = SubResource("CanvasItemMaterial_edfsy")
 position = Vector2(19.999939, 3.75)
@@ -77,6 +78,7 @@ texture = SubResource("CanvasTexture_brofb")
 script = ExtResource("6_edfsy")
 
 [node name="resume_button" type="Button" parent="." unique_id=170531760]
+visible = false
 offset_left = -216.0
 offset_top = -200.0
 offset_right = -11.358887
@@ -85,6 +87,7 @@ scale = Vector2(1.9565605, 1.9565605)
 text = "resume"
 
 [node name="research_button" type="Button" parent="." unique_id=1695683968]
+visible = false
 offset_left = -216.0
 offset_top = -32.0
 offset_right = -11.358887
@@ -93,6 +96,7 @@ scale = Vector2(1.9565605, 1.9565605)
 text = "Research"
 
 [node name="exit_button" type="Button" parent="." unique_id=1929959541]
+visible = false
 offset_left = -216.0
 offset_top = 168.0
 offset_right = -11.358887
@@ -100,6 +104,7 @@ offset_bottom = 199.0
 scale = Vector2(1.9565605, 1.9565605)
 text = "exit"
 
+[connection signal="pressed" from="FoldableContainer/GridContainer/Wooden_wall" to="." method="_on_wooden_wall_pressed"]
 [connection signal="pressed" from="resume_button" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="research_button" to="." method="_on_research_button_pressed"]
 [connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
