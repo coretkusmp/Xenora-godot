@@ -18,6 +18,10 @@ metadata/_edit_group_ = true
 scale = Vector2(0.192188, 0.192188)
 texture = ExtResource("2_504in")
 
+[node name="Sprite2D" type="Sprite2D" parent="player/Sprite2D" unique_id=614704246]
+scale = Vector2(0.192188, 0.192188)
+texture = ExtResource("2_504in")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=38992798]
 shape = SubResource("RectangleShape2D_mdnh3")
 
