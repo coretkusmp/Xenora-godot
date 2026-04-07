@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://ddop1cap5b2w1"]
 
-[ext_resource type="Script" uid="uid://bubtdbnf1fy6n" path="res://button_play.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://ct6rb7h3xqq47" path="res://main_menu.gd" id="1_06t4h"]
 
 [node name="Main Menu" type="Node2D" unique_id=8890963]
 position = Vector2(235, 207)
+script = ExtResource("1_06t4h")
 
 [node name="playbutton" type="Button" parent="." unique_id=1402704427]
 offset_left = -182.0
@@ -11,7 +12,6 @@ offset_top = -132.0
 offset_right = 62.0
 offset_bottom = -64.0
 text = "Play"
-script = ExtResource("1_06t4h")
 
 [node name="Character button" type="Button" parent="." unique_id=122004854]
 offset_left = -182.0
@@ -43,3 +43,5 @@ offset_right = 763.0
 offset_bottom = 143.0
 theme_override_font_sizes/font_size = 100
 text = "Xenora"
+
+[connection signal="pressed" from="playbutton" to="." method="_on_playbutton_pressed"]

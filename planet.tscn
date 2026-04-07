@@ -1,18 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b25gkls3sg3h0"]
+[gd_scene format=3 uid="uid://b25gkls3sg3h0"]
+
+[ext_resource type="Script" uid="uid://nweu5pbk6l7b" path="res://planet.gd" id="1_1odxm"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_jcv8b"]
 
-[node name="Planet" type="Node2D"]
+[node name="Planet" type="Node2D" unique_id=9895614]
+script = ExtResource("1_1odxm")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=590050725]
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=474896033]
 modulate = Color(0.0156863, 0.00784314, 0, 0.180392)
 position = Vector2(576.25, 35.25)
 scale = Vector2(1153.5, 71.5)
 texture = SubResource("CanvasTexture_jcv8b")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=668721757]
 offset_left = 149.0
 offset_top = 12.0
 offset_right = 362.0
@@ -21,14 +24,33 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 32
 text = "Planet musco"
 
-[node name="Button" type="Button" parent="."]
+[node name="return btn" type="Button" parent="." unique_id=356150302]
 offset_right = 113.0
 offset_bottom = 71.0
 theme_override_font_sizes/font_size = 35
 text = "<"
 
-[node name="Button" type="Button" parent="Button"]
-layout_mode = 0
+[node name="VScrollBar" type="VScrollBar" parent="." unique_id=876841450]
+offset_left = 1112.0
+offset_top = 123.0
+offset_right = 1130.0
+offset_bottom = 624.0
+max_value = 50.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1632055836]
+modulate = Color(0.0156863, 0.00784314, 0, 0.180392)
+position = Vector2(720.5, 382.5)
+scale = Vector2(847, 573)
+texture = SubResource("CanvasTexture_jcv8b")
+
+[node name="Area a-01" type="Button" parent="." unique_id=521590385]
+offset_left = 326.0
+offset_top = 113.0
+offset_right = 415.0
+offset_bottom = 202.0
+text = "Area a-01"
+
+[node name="Button3" type="Button" parent="." unique_id=1057555726]
 offset_left = 17.0
 offset_top = 104.0
 offset_right = 258.0
@@ -36,32 +58,14 @@ offset_bottom = 175.0
 theme_override_font_sizes/font_size = 35
 text = "Planet musco"
 
-[node name="Button" type="Button" parent="Button/Button"]
-layout_mode = 0
-offset_left = -1.0
-offset_top = 97.0
-offset_right = 240.0
-offset_bottom = 168.0
+[node name="Button4" type="Button" parent="." unique_id=837955506]
+offset_left = 16.0
+offset_top = 201.0
+offset_right = 263.0
+offset_bottom = 272.0
 theme_override_font_sizes/font_size = 35
 text = "Planet fingunt
 "
 
-[node name="VScrollBar" type="VScrollBar" parent="."]
-offset_left = 1112.0
-offset_top = 123.0
-offset_right = 1130.0
-offset_bottom = 624.0
-max_value = 50.0
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.0156863, 0.00784314, 0, 0.180392)
-position = Vector2(720.5, 382.5)
-scale = Vector2(847, 573)
-texture = SubResource("CanvasTexture_jcv8b")
-
-[node name="Button2" type="Button" parent="."]
-offset_left = 326.0
-offset_top = 113.0
-offset_right = 415.0
-offset_bottom = 202.0
-text = "Area a-01"
+[connection signal="pressed" from="return btn" to="." method="_on_return_btn_pressed"]
+[connection signal="pressed" from="Area a-01" to="." method="_on_area_a_01_pressed"]
