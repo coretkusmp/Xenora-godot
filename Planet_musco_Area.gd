@@ -1,6 +1,8 @@
 extends Node2D
 
-
+var wooden_wall
+func _ready() -> void:
+	wooden_wall = $FoldableContainer/GridContainer/Wooden_wall
 var esc_yet = false
 var research = false
 
@@ -38,6 +40,11 @@ func _physics_process(delta):
 		menu_ex_bg.show()
 		research_bt.show()
 		resume_bt.show()
+	
+	if item_001_selected_yet:
+		wooden_wall.add_theme_color_override("font_color", Color.YELLOW)
+	else:
+		wooden_wall.add_theme_color_override("font_color", Color.WHITE)
 
 
 

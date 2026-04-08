@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://wygqs752xe3j"]
+
+[ext_resource type="Script" uid="uid://cpug4pubp0oho" path="res://settings.gd" id="1_x2hje"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jwo76"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_x2hje"]
+
+[node name="settings" type="Node2D" unique_id=1935615972]
+script = ExtResource("1_x2hje")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=757553549]
+modulate = Color(0.3862508, 0.38625085, 0.38625085, 1)
+position = Vector2(-451.99997, -282)
+scale = Vector2(-2682.7344, -1551.1088)
+texture = SubResource("CanvasTexture_jwo76")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1076376127]
+
+[node name="Button" type="Button" parent="." unique_id=714884179]
+offset_left = -577.0
+offset_top = -327.0
+offset_right = -464.0
+offset_bottom = -256.0
+theme_override_font_sizes/font_size = 35
+text = "<"
+
+[node name="Sprite2D_2" type="Sprite2D" parent="." unique_id=40698362]
+modulate = Color(0.1893278, 0.18932778, 0.1893278, 1)
+position = Vector2(57.995697, -291.01953)
+rotation = 3.1415927
+scale = Vector2(1043.7898, 71.19446)
+texture = SubResource("CanvasTexture_x2hje")
+
+[node name="Label" type="Label" parent="." unique_id=676856324]
+offset_left = -452.0
+offset_top = -314.0
+offset_right = -328.0
+offset_bottom = -269.0
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

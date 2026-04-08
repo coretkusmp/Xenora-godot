@@ -45,3 +45,4 @@ theme_override_font_sizes/font_size = 100
 text = "Xenora"
 
 [connection signal="pressed" from="playbutton" to="." method="_on_playbutton_pressed"]
+[connection signal="pressed" from="Settings button" to="." method="_on_settings_button_pressed"]
