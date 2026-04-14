@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://ddop1cap5b2w1"]
 
 [ext_resource type="Script" uid="uid://ct6rb7h3xqq47" path="res://main_menu.gd" id="1_06t4h"]
-[ext_resource type="Texture2D" uid="uid://bx4tipjf0xc88" path="res://sprite/pixel-art-frame-1.png" id="2_7vrkn"]
 
 [node name="Main Menu" type="Node2D" unique_id=8890963]
 position = Vector2(235, 207)
@@ -44,11 +43,6 @@ offset_right = 763.0
 offset_bottom = 143.0
 theme_override_font_sizes/font_size = 100
 text = "Xenora"
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=60950041]
-position = Vector2(460, -88)
-scale = Vector2(0.221875, 0.228125)
-texture = ExtResource("2_7vrkn")
 
 [connection signal="pressed" from="playbutton" to="." method="_on_playbutton_pressed"]
 [connection signal="pressed" from="Settings button" to="." method="_on_settings_button_pressed"]
