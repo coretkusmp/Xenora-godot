@@ -41,12 +41,6 @@ offset_top = 128.0
 offset_right = 99.0
 offset_bottom = 203.0
 text = "wall"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
 
 [node name="menu_exit_bg" type="Sprite2D" parent="." unique_id=1618458419]
 visible = false
@@ -56,12 +50,6 @@ position = Vector2(19.999939, 3.75)
 scale = Vector2(1271.9999, 680.5)
 texture = SubResource("CanvasTexture_brofb")
 script = ExtResource("6_edfsy")
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
 
 [node name="resume_button" type="Button" parent="." unique_id=170531760]
 visible = false
@@ -71,12 +59,6 @@ offset_right = -11.358887
 offset_bottom = -169.0
 scale = Vector2(1.9565605, 1.9565605)
 text = "resume"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
 
 [node name="research_button" type="Button" parent="." unique_id=1695683968]
 visible = false
@@ -86,12 +68,6 @@ offset_right = -11.358887
 offset_bottom = -1.0
 scale = Vector2(1.9565605, 1.9565605)
 text = "Research"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
 
 [node name="exit_button" type="Button" parent="." unique_id=1929959541]
 visible = false
