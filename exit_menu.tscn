@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cwetebib8ypqa"]
+
+[ext_resource type="Script" uid="uid://11j3stlp24xk" path="res://exit_menu.gd" id="1_1gnor"]
+[ext_resource type="Script" uid="uid://cv63bubklbbh1" path="res://menu_exit_bg.gd" id="1_5f102"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_sey46"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ywfpc"]
+specular_color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1748175996]
+script = ExtResource("1_1gnor")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="menu_exit_bg" type="Sprite2D" parent="." unique_id=1887723360]
+visible = false
+modulate = Color(0.17785347, 0.17785347, 0.17785347, 1)
+material = SubResource("CanvasItemMaterial_sey46")
+position = Vector2(576, 328)
+scale = Vector2(1271.9999, 680.5)
+texture = SubResource("CanvasTexture_ywfpc")
+script = ExtResource("1_5f102")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="resume_button" type="Button" parent="." unique_id=1096921157]
+visible = false
+offset_left = 416.0
+offset_top = 120.0
+offset_right = 620.6411
+offset_bottom = 151.0
+scale = Vector2(1.9565605, 1.9565605)
+text = "resume"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="research_button" type="Button" parent="." unique_id=1157022938]
+visible = false
+offset_left = 416.0
+offset_top = 288.0
+offset_right = 620.6411
+offset_bottom = 319.0
+scale = Vector2(1.9565605, 1.9565605)
+text = "Research"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="exit_button" type="Button" parent="." unique_id=1992940052]
+visible = false
+offset_left = 416.0
+offset_top = 488.0
+offset_right = 620.6411
+offset_bottom = 519.0
+scale = Vector2(1.9565605, 1.9565605)
+text = "exit"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []

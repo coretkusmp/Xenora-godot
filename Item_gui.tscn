@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://kmtsrcids0ek"]
+
+[ext_resource type="Script" uid="uid://djgeeo6crylw8" path="res://select_item.gd" id="1_4vtje"]
+[ext_resource type="Script" uid="uid://8wha4fqmijdt" path="res://item_gui.gd" id="1_qbptl"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_4vtje"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1961096380]
+script = ExtResource("1_qbptl")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=382116911]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(344, 192)
+scale = Vector2(448.00003, 256.00003)
+texture = SubResource("CanvasTexture_4vtje")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1793835165]
+offset_left = 124.0
+offset_top = 68.0
+offset_right = 564.0
+offset_bottom = 316.0
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer" unique_id=1047126872]
+layout_mode = 2
+columns = 4
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Wooden_wall" type="Button" parent="HBoxContainer/GridContainer" unique_id=561861383]
+layout_mode = 2
+text = "wooden
+wall"
+script = ExtResource("1_4vtje")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Stone_wall" type="Button" parent="HBoxContainer/GridContainer" unique_id=969654797]
+layout_mode = 2
+text = "stone
+wall"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Button2" type="Button" parent="." unique_id=1312119854]
+offset_left = 32.0
+offset_top = 72.0
+offset_right = 107.0
+offset_bottom = 147.0
+text = "all
+"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Button" type="Button" parent="." unique_id=1878306285]
+offset_left = 32.0
+offset_top = 160.0
+offset_right = 107.0
+offset_bottom = 235.0
+text = "wall"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[connection signal="pressed" from="HBoxContainer/GridContainer/Wooden_wall" to="." method="_on_wooden_wall_pressed"]

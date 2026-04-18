@@ -2,13 +2,8 @@
 
 [ext_resource type="Script" uid="uid://62ujatrgldfs" path="res://Planet_musco_Area.gd" id="1_jkdkt"]
 [ext_resource type="PackedScene" uid="uid://cqa5f8hbl5r3u" path="res://player.tscn" id="2_e87bv"]
-[ext_resource type="Script" uid="uid://djgeeo6crylw8" path="res://select_item.gd" id="4_e87bv"]
-[ext_resource type="Script" uid="uid://cv63bubklbbh1" path="res://menu_exit_bg.gd" id="6_edfsy"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_edfsy"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_brofb"]
-specular_color = Color(0, 0, 0, 1)
+[ext_resource type="PackedScene" uid="uid://kmtsrcids0ek" path="res://Item_gui.tscn" id="4_e87bv"]
+[ext_resource type="PackedScene" uid="uid://cwetebib8ypqa" path="res://exit_menu.tscn" id="4_jkdkt"]
 
 [node name="area_a-01" type="Node2D" unique_id=1948982279]
 script = ExtResource("1_jkdkt")
@@ -21,133 +16,8 @@ metadata/logic_bricks_frames = []
 
 [node name="player" parent="." unique_id=1284520225 instance=ExtResource("2_e87bv")]
 
-[node name="Button2" type="Button" parent="." unique_id=474431973]
-offset_left = 24.0
-offset_top = 40.0
-offset_right = 99.0
-offset_bottom = 115.0
-text = "all
-"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
+[node name="CanvasLayer" parent="player" unique_id=1961096380 instance=ExtResource("4_e87bv")]
+offset = Vector2(585.51, 326.355)
+transform = Transform2D(1, 0, 0, 1, 585.51, 326.355)
 
-[node name="Button" type="Button" parent="." unique_id=973824652]
-offset_left = 24.0
-offset_top = 128.0
-offset_right = 99.0
-offset_bottom = 203.0
-text = "wall"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="menu_exit_bg" type="Sprite2D" parent="." unique_id=1618458419]
-visible = false
-modulate = Color(0.17785347, 0.17785347, 0.17785347, 1)
-material = SubResource("CanvasItemMaterial_edfsy")
-position = Vector2(19.999939, 3.75)
-scale = Vector2(1271.9999, 680.5)
-texture = SubResource("CanvasTexture_brofb")
-script = ExtResource("6_edfsy")
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="resume_button" type="Button" parent="." unique_id=170531760]
-visible = false
-offset_left = -216.0
-offset_top = -200.0
-offset_right = -11.358887
-offset_bottom = -169.0
-scale = Vector2(1.9565605, 1.9565605)
-text = "resume"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="research_button" type="Button" parent="." unique_id=1695683968]
-visible = false
-offset_left = -216.0
-offset_top = -32.0
-offset_right = -11.358887
-offset_bottom = -1.0
-scale = Vector2(1.9565605, 1.9565605)
-text = "Research"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="exit_button" type="Button" parent="." unique_id=1929959541]
-visible = false
-offset_left = -216.0
-offset_top = 168.0
-offset_right = -11.358887
-offset_bottom = 199.0
-scale = Vector2(1.9565605, 1.9565605)
-text = "exit"
-
-[node name="FoldableContainer" type="FoldableContainer" parent="." unique_id=2094615557]
-offset_left = 120.0
-offset_top = 40.0
-offset_right = 568.0
-offset_bottom = 320.0
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="GridContainer" type="GridContainer" parent="FoldableContainer" unique_id=2049499483]
-layout_mode = 2
-columns = 4
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="Wooden_wall" type="Button" parent="FoldableContainer/GridContainer" unique_id=1175986231]
-layout_mode = 2
-text = "wooden
-wall"
-script = ExtResource("4_e87bv")
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="Stone_wall" type="Button" parent="FoldableContainer/GridContainer" unique_id=880109310]
-layout_mode = 2
-text = "stone
-wall"
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[connection signal="pressed" from="resume_button" to="." method="_on_resume_button_pressed"]
-[connection signal="pressed" from="research_button" to="." method="_on_research_button_pressed"]
-[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="FoldableContainer/GridContainer/Wooden_wall" to="." method="_on_wooden_wall_pressed"]
+[node name="CanvasLayer2" parent="player" unique_id=1748175996 instance=ExtResource("4_jkdkt")]
