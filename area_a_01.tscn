@@ -1,14 +1,9 @@
 [gd_scene format=3 uid="uid://cro365xjx7jly"]
 
-[ext_resource type="Script" uid="uid://205h15lvrh54" path="res://Walking.gd" id="1_hmnvj"]
 [ext_resource type="Script" uid="uid://62ujatrgldfs" path="res://Planet_musco_Area.gd" id="1_jkdkt"]
-[ext_resource type="Texture2D" uid="uid://bx4tipjf0xc88" path="res://sprite/pixel-art-frame-1.png" id="2_504in"]
-[ext_resource type="Script" uid="uid://be7mtfvse4y5a" path="res://follow_cam.gd" id="3_504in"]
+[ext_resource type="PackedScene" uid="uid://cqa5f8hbl5r3u" path="res://player.tscn" id="2_e87bv"]
 [ext_resource type="Script" uid="uid://djgeeo6crylw8" path="res://select_item.gd" id="4_e87bv"]
 [ext_resource type="Script" uid="uid://cv63bubklbbh1" path="res://menu_exit_bg.gd" id="6_edfsy"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mdnh3"]
-size = Vector2(58, 54)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_edfsy"]
 
@@ -17,20 +12,14 @@ specular_color = Color(0, 0, 0, 1)
 
 [node name="area_a-01" type="Node2D" unique_id=1948982279]
 script = ExtResource("1_jkdkt")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
 
-[node name="player" type="CharacterBody2D" parent="." unique_id=1797402138]
-script = ExtResource("1_hmnvj")
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="player" unique_id=1121691426]
-scale = Vector2(0.192188, 0.192188)
-texture = ExtResource("2_504in")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=38992798]
-shape = SubResource("RectangleShape2D_mdnh3")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1461565343]
-script = ExtResource("3_504in")
+[node name="player" parent="." unique_id=1284520225 instance=ExtResource("2_e87bv")]
 
 [node name="Button2" type="Button" parent="." unique_id=474431973]
 offset_left = 24.0
@@ -39,6 +28,12 @@ offset_right = 99.0
 offset_bottom = 115.0
 text = "all
 "
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
 
 [node name="Button" type="Button" parent="." unique_id=973824652]
 offset_left = 24.0
@@ -46,27 +41,6 @@ offset_top = 128.0
 offset_right = 99.0
 offset_bottom = 203.0
 text = "wall"
-
-[node name="FoldableContainer" type="FoldableContainer" parent="." unique_id=2094615557]
-offset_left = 120.0
-offset_top = 40.0
-offset_right = 568.0
-offset_bottom = 320.0
-
-[node name="GridContainer" type="GridContainer" parent="FoldableContainer" unique_id=2049499483]
-layout_mode = 2
-columns = 4
-
-[node name="Wooden_wall" type="Button" parent="FoldableContainer/GridContainer" unique_id=1175986231]
-layout_mode = 2
-text = "wooden
-wall"
-script = ExtResource("4_e87bv")
-
-[node name="Stone_wall" type="Button" parent="FoldableContainer/GridContainer" unique_id=880109310]
-layout_mode = 2
-text = "stone
-wall"
 
 [node name="menu_exit_bg" type="Sprite2D" parent="." unique_id=1618458419]
 visible = false
@@ -104,8 +78,52 @@ offset_bottom = 199.0
 scale = Vector2(1.9565605, 1.9565605)
 text = "exit"
 
-[connection signal="pressed" from="FoldableContainer/GridContainer/Wooden_wall" to="." method="_on_wooden_wall_pressed"]
+[node name="FoldableContainer" type="FoldableContainer" parent="." unique_id=2094615557]
+offset_left = 120.0
+offset_top = 40.0
+offset_right = 568.0
+offset_bottom = 320.0
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="GridContainer" type="GridContainer" parent="FoldableContainer" unique_id=2049499483]
+layout_mode = 2
+columns = 4
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Wooden_wall" type="Button" parent="FoldableContainer/GridContainer" unique_id=1175986231]
+layout_mode = 2
+text = "wooden
+wall"
+script = ExtResource("4_e87bv")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Stone_wall" type="Button" parent="FoldableContainer/GridContainer" unique_id=880109310]
+layout_mode = 2
+text = "stone
+wall"
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
 [connection signal="pressed" from="resume_button" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="research_button" to="." method="_on_research_button_pressed"]
 [connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="exit_button" to="player" method="_on_button_3_pressed"]
+[connection signal="pressed" from="FoldableContainer/GridContainer/Wooden_wall" to="." method="_on_wooden_wall_pressed"]

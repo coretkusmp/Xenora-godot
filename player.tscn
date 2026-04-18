@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cqa5f8hbl5r3u"]
+
+[ext_resource type="Script" uid="uid://205h15lvrh54" path="res://Walking.gd" id="1_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://bx4tipjf0xc88" path="res://sprite/pixel-art-frame-1.png" id="2_hqtel"]
+[ext_resource type="Script" uid="uid://be7mtfvse4y5a" path="res://follow_cam.gd" id="3_sweqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mdnh3"]
+size = Vector2(58, 54)
+
+[node name="player" type="CharacterBody2D" unique_id=1284520225]
+script = ExtResource("1_i3pqv")
+metadata/_edit_group_ = true
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=300589455]
+scale = Vector2(0.192188, 0.192188)
+texture = ExtResource("2_hqtel")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1102922852]
+shape = SubResource("RectangleShape2D_mdnh3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2137626229]
+position_smoothing_enabled = true
+position_smoothing_speed = 2.5
+script = ExtResource("3_sweqy")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []

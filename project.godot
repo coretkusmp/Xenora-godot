@@ -19,6 +19,14 @@ run/main_scene="uid://cro365xjx7jly"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalVars="*uid://dx1y6cx8kuy8e"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/logic_bricks/plugin.cfg")
+
 [input]
 
 move_left={

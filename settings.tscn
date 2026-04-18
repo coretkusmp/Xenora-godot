@@ -8,6 +8,12 @@
 
 [node name="settings" type="Node2D" unique_id=1935615972]
 script = ExtResource("1_x2hje")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=757553549]
 modulate = Color(0.3862508, 0.38625085, 0.38625085, 1)

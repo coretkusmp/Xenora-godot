@@ -22,6 +22,8 @@ func _on_research_button_pressed() -> void:
 
 
 func _physics_process(delta):
+	
+	
 	if Input.is_action_just_pressed("esc"):
 		esc_yet = !esc_yet
 	
