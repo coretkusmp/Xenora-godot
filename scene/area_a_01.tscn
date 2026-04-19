@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://cro365xjx7jly"]
+[gd_scene format=3 uid="uid://dioatm20ws20o"]
 
 [ext_resource type="Script" uid="uid://62ujatrgldfs" path="res://Planet_musco_Area.gd" id="1_jkdkt"]
-[ext_resource type="PackedScene" uid="uid://cqa5f8hbl5r3u" path="res://player.tscn" id="2_e87bv"]
-[ext_resource type="PackedScene" uid="uid://kmtsrcids0ek" path="res://Item_gui.tscn" id="4_e87bv"]
-[ext_resource type="PackedScene" uid="uid://cwetebib8ypqa" path="res://exit_menu.tscn" id="4_jkdkt"]
+[ext_resource type="PackedScene" uid="uid://7q04x1if3pul" path="res://scene/player.tscn" id="2_e87bv"]
+[ext_resource type="PackedScene" uid="uid://kmtsrcids0ek" path="res://scene/Item_gui.tscn" id="4_e87bv"]
+[ext_resource type="PackedScene" uid="uid://cpfn6cp2eve5i" path="res://scene/exit_menu.tscn" id="4_jkdkt"]
 
 [node name="area_a-01" type="Node2D" unique_id=1948982279]
 script = ExtResource("1_jkdkt")

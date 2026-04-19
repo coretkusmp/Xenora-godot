@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://wygqs752xe3j"]
+[gd_scene format=3 uid="uid://dq5eqgm84vytk"]
 
-[ext_resource type="Script" uid="uid://cpug4pubp0oho" path="res://settings.gd" id="1_x2hje"]
+[ext_resource type="Script" uid="uid://cpug4pubp0oho" path="res://settings.gd" id="1_likc5"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_jwo76"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_x2hje"]
 
 [node name="settings" type="Node2D" unique_id=1935615972]
-script = ExtResource("1_x2hje")
+script = ExtResource("1_likc5")
 metadata/logic_bricks_graph = {
 "connections": [],
 "next_id": 0,

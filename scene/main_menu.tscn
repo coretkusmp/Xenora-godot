@@ -1,10 +1,16 @@
-[gd_scene format=3 uid="uid://ddop1cap5b2w1"]
+[gd_scene format=3 uid="uid://bmqsv2bktgct3"]
 
-[ext_resource type="Script" uid="uid://ct6rb7h3xqq47" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://ct6rb7h3xqq47" path="res://main_menu.gd" id="1_3er1b"]
 
 [node name="Main Menu" type="Node2D" unique_id=8890963]
 position = Vector2(235, 207)
-script = ExtResource("1_06t4h")
+script = ExtResource("1_3er1b")
+metadata/logic_bricks_graph = {
+"connections": [],
+"next_id": 0,
+"nodes": []
+}
+metadata/logic_bricks_frames = []
 
 [node name="playbutton" type="Button" parent="." unique_id=1402704427]
 offset_left = -182.0

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cwetebib8ypqa"]
+[gd_scene format=3 uid="uid://cpfn6cp2eve5i"]
 
 [ext_resource type="Script" uid="uid://11j3stlp24xk" path="res://exit_menu.gd" id="1_1gnor"]
 [ext_resource type="Script" uid="uid://cv63bubklbbh1" path="res://menu_exit_bg.gd" id="1_5f102"]
@@ -76,3 +76,7 @@ metadata/logic_bricks_graph = {
 "nodes": []
 }
 metadata/logic_bricks_frames = []
+
+[connection signal="pressed" from="resume_button" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="research_button" to="." method="_on_research_button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
