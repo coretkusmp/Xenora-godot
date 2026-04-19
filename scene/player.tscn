@@ -39,6 +39,10 @@ metadata/logic_bricks_frames = []
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2137626229]
 position_smoothing_enabled = true
 position_smoothing_speed = 2.5
+drag_left_margin = 0.4
+drag_top_margin = 0.4
+drag_right_margin = 0.4
+drag_bottom_margin = 0.4
 script = ExtResource("3_i3pqv")
 metadata/logic_bricks_graph = {
 "connections": [],

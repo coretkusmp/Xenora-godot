@@ -18,18 +18,12 @@ metadata/logic_bricks_frames = []
 [node name="player" parent="." unique_id=1284520225 instance=ExtResource("2_e87bv")]
 
 [node name="Item_gui" parent="player" unique_id=1961096380 instance=ExtResource("4_e87bv")]
+offset = Vector2(585.51, 326.355)
+transform = Transform2D(1, 0, 0, 1, 585.51, 326.355)
 
 [node name="Exit_menu" parent="player" unique_id=1748175996 instance=ExtResource("4_jkdkt")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="player" unique_id=894415749]
-metadata/logic_bricks_graph = {
-"connections": [],
-"next_id": 0,
-"nodes": []
-}
-metadata/logic_bricks_frames = []
-
-[node name="coordinate" type="Label" parent="player/CanvasLayer" unique_id=1873768902]
+[node name="coordinate" type="Label" parent="." unique_id=1873768902]
 offset_left = 22.0
 offset_top = 23.0
 offset_right = 351.0

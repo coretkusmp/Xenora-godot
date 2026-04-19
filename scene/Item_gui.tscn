@@ -16,8 +16,8 @@ metadata/logic_bricks_frames = []
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=382116911]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(344, 192)
-scale = Vector2(448.00003, 256.00003)
+position = Vector2(976, 520)
+scale = Vector2(350, 256)
 texture = SubResource("CanvasTexture_4vtje")
 metadata/logic_bricks_graph = {
 "connections": [],
@@ -27,10 +27,10 @@ metadata/logic_bricks_graph = {
 metadata/logic_bricks_frames = []
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1793835165]
-offset_left = 124.0
-offset_top = 68.0
-offset_right = 564.0
-offset_bottom = 316.0
+offset_left = 804.0
+offset_top = 396.0
+offset_right = 1154.0
+offset_bottom = 644.0
 metadata/logic_bricks_graph = {
 "connections": [],
 "next_id": 0,
@@ -72,10 +72,10 @@ metadata/logic_bricks_graph = {
 metadata/logic_bricks_frames = []
 
 [node name="Button2" type="Button" parent="." unique_id=1312119854]
-offset_left = 32.0
-offset_top = 72.0
-offset_right = 107.0
-offset_bottom = 147.0
+offset_left = 712.0
+offset_top = 400.0
+offset_right = 787.0
+offset_bottom = 475.0
 text = "all
 "
 metadata/logic_bricks_graph = {
@@ -86,10 +86,10 @@ metadata/logic_bricks_graph = {
 metadata/logic_bricks_frames = []
 
 [node name="Button" type="Button" parent="." unique_id=1878306285]
-offset_left = 32.0
-offset_top = 160.0
-offset_right = 107.0
-offset_bottom = 235.0
+offset_left = 712.0
+offset_top = 488.0
+offset_right = 787.0
+offset_bottom = 563.0
 text = "wall"
 metadata/logic_bricks_graph = {
 "connections": [],

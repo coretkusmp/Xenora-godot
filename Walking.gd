@@ -3,7 +3,6 @@ extends CharacterBody2D
 const speed = 600
 
 func _physics_process(delta):
-	print(int(position.x),", ", int(position.y))
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	velocity = direction * speed
 	move_and_slide()
